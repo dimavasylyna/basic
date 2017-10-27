@@ -1,0 +1,455 @@
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+html, 
+body {
+	min-width: 1122px;
+	min-height: 1750px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "PT Sans NArrow", "Arial", sans-serif;
+	min-width: 960px; 
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	background: #000 url(../img/bg.jpg) no-repeat center top;
+}
+
+.main-header {
+
+	/** Оформлення сітки  **/
+	min-height: 72px;
+	margin-bottom: 57px;
+
+	/** Декоративні елементи**/
+	color: #fff;
+	background-color: #000;
+
+}
+
+.container {
+	
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+	
+	/** Оформлення сітки  **/
+	min-height: 72px;
+}
+
+.main-header-layout {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-navigation {
+	
+	width: 780px;
+
+	/** Оформлення сітки  **/
+	min-height: 72px;
+}
+
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+	font-size: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	vertical-align: top;
+	
+}
+
+.main-navigation a {
+	color: #fff;
+	text-decoration: none;
+
+	display: block;
+	padding: 25px 20px;
+
+}
+
+.main-navigation a:hover {
+	background-color: #242424;
+	transition: 0.2s;
+}
+
+.user-block {
+	
+	max-width: 120px;
+	float: right;
+
+	/** Оформлення сітки  **/
+	min-height: 72px;
+}
+
+.user-block a {
+	position: relative;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 25px 22px;
+	padding-left: 52px;
+}
+
+.user-block a::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background:  url(../img/icon-login.png) no-repeat;
+	width: 18px;
+	height: 20px;
+	top: 28px;
+	left: 20px;
+	opacity: 0.3;
+}
+
+.user-block a:hover::before {
+	opacity: 1;
+}
+
+.user-block a:hover {
+	background-color: #242424;
+}
+
+.index-logo {
+	
+	width: 368px;
+	min-height: 204px;
+	margin-right: auto;
+	margin-left: 291px;
+	margin-bottom: 13px;
+}
+
+.index-logo img {
+	width: 368px;
+	height: 204px;
+}
+
+.features {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 80px;
+}
+
+.features-item {
+	
+	width: 300px;
+	/** Оформлення сітки  **/
+	min-height: 175px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.features-item b {
+	font-size: 30px;
+	line-height: 42px;
+	margin-top: 0;
+	display: block;
+	margin-bottom: 69px;
+	position: relative;
+}
+
+.features-item b:hover {
+	font-size: 35px;
+	transition: 0.3s;
+}
+
+.features-item b::after {
+	content: "";
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	margin-left: -10px;
+	transform: rotate(45deg);
+	top: 60px;
+	left: 50%;
+}
+
+.features-item b:hover::after {
+	transform: rotate(405deg);
+	transition: 0.8s;
+}
+
+.features-item p {
+	margin: 10px;
+	margin-bottom: 0;
+}
+.index-content {
+	
+	margin-bottom: 34px;
+	padding: 50px 80px;
+	padding-top: 44px;
+	display: flex;
+	justify-content: space-between;
+	min-height: 420px;
+
+	font-weight: bold;
+	background: url(../img/shadow.png) no-repeat center,
+	 #f8f5f2 url(../img/index-content-bg.jpg) no-repeat;
+	color: #000;
+}
+
+.index-content-left {
+	
+	width: 380px;
+	/** Оформлення сітки  **/
+	min-height: 320px;
+
+	font-weight: bold;
+}
+
+.index-content p {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+
+
+.index-content-title {
+	font-size: 30px;
+	line-height: 42px;
+	margin: 0;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+.news-preview {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 35px;
+	font-weight: bold;
+}
+
+.news-preview li {
+	margin-bottom: 25px;
+}
+
+.news-preview p {
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.news-preview time {
+	text-transform: none;
+	font-weight: normal;
+}
+
+
+.index-content-right {
+	
+	width: 300px;
+	/** Оформлення сітки  **/
+	min-height: 320px;
+}
+
+/**** BUTTON ****/
+.btn {
+	display: inline-block;
+	padding: 10px 33px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	height: 43px;
+	text-align: center;
+	vertical-align: top;
+	margin-right: 16px;
+
+	transition: 0.2s;
+}
+
+.btn:hover, 
+.btn:active {
+	background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+	background-color: #000;
+}
+
+/*** GALERY ***/
+
+.gallery-content {
+	height: 179px;
+	margin: 0;
+	margin-top: 31px;
+
+	background-color: #ccc;
+	border: 7px solid #fff;
+}
+
+.gallery-content img {
+	width: 286px;
+	height: 164px;
+}
+
+.gallery .btn {
+	margin-top: 36px;
+	margin-right: 17px;
+	width: 140px;
+}
+
+.gallery .btn:last-child {
+	margin-right: 0;
+}
+
+
+/*** FORM  ***/
+
+
+.appointment-form input {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 140px;
+	padding: 7px 15px;
+	background-color: #f9f6f3;
+	border: 2px solid #000;
+	font: inherit;
+	color: inherit;
+	text-transform: inherit;
+}
+
+.appointment-form input:nth-child(2n) {
+	margin-right: 0;
+}
+
+.appointment-form .btn {
+	clear: both;
+	width: 100%;
+}
+
+.appointment-form input:focus {
+	border: 2px solid #663d15;
+}
+
+
+
+/****  FOOTER  ****/
+
+.main-footer {
+	
+	margin-top: 65px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	color: #fff;
+
+	background: #252525 url(../img/pattern.png);
+}
+
+.main-footer-layout {
+	display: flex;
+}
+
+.footer-contacts, .footer-social, .footer-copyright {
+	min-height: 90px;
+	
+}
+
+.footer-contacts {
+width: 320px;
+margin-right: 60px;
+}
+
+.footer-contacts a {
+	color: #fff;	
+}
+
+.footer-contacts a:hover {
+	text-decoration: none;
+}
+.footer-social {
+	width: 180px;
+	text-align: center;
+}
+
+.footer-social p {
+	margin: 0;
+	margin-bottom: 15px;
+	
+}
+
+.social-btn {
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin: 0 2px;
+
+	background: #000 url(../img/sprite-soc.png) no-repeat center;
+	font-size: 0;
+}
+
+.social-btn-vk {
+
+    background-position: -2px -80px;
+}
+
+.social-btn-fb {
+	background-position: 5px -1px;
+}
+
+.social-btn-inst {
+	background-position: 1px -40px;
+}
+
+.social-btn:hover {
+	filter: invert(100%);
+	transition: filter 0.7s;
+}
+
+
+.footer-copyright {
+	width: 160px;
+	margin-left: auto;
+	text-align: center;
+
+}
+
+.footer-copyright .btn {
+	margin-right: 0;
+	width: 140px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+
+
